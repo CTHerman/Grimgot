@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour {
 
 	private void Awake() {
 		rb = GetComponent<Rigidbody2D>();
-		//animator = GetComponent<Animator>();
+		animator = GetComponent<Animator>();
 		sr = GetComponent<SpriteRenderer>();
 	}
 
@@ -28,9 +28,9 @@ public class PlayerMovement : MonoBehaviour {
 		movement.x = Input.GetAxisRaw("Horizontal");
 		movement.y = Input.GetAxisRaw("Vertical");
 
-		//animator.SetFloat("Horizontal", movement.x);
-		//animator.SetFloat("Vertical", movement.y);
-		//animator.SetFloat("Speed", movement.sqrMagnitude);
+        //animator.SetFloat("Horizontal", movement.x);
+        //animator.SetFloat("Vertical", movement.y);
+        animator.SetFloat("Speed", movement.sqrMagnitude);
 
 		if (Input.GetAxis("Horizontal") < 0) {
 			sr.flipX = true;
@@ -38,6 +38,11 @@ public class PlayerMovement : MonoBehaviour {
 		if (Input.GetAxis("Horizontal") > 0) {
 			sr.flipX = false;
 		}
+        if (Input.GetButtonDown("Fire1"))
+        {
+            Debug.Log("Attack pressed");
+            animator.SetTrigger("Attack");
+        }
 	}
 
 	private void FixedUpdate() {
