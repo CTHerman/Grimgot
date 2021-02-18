@@ -4,43 +4,73 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -1603847806081060254
-    second: TopLeftWall
+    second: grimgot_0
   - first:
       213: 4816622189214049657
-    second: TopMiddleWall
+    second: grimgot_1
   - first:
       213: -3717067183506260262
-    second: TopRightWall
+    second: grimgot_2
   - first:
       213: -3606894953680792280
-    second: DwarfRun1
+    second: grimgot_3
   - first:
       213: 5276904085616456565
-    second: DwarfRun2
+    second: grimgot_4
   - first:
       213: -7799568656233152463
-    second: DwarfRun3
+    second: grimgot_5
   - first:
       213: 5424756858199712158
-    second: DwarfRun4
+    second: grimgot_6
   - first:
       213: 3646662226659860263
-    second: MiddleLeftWall
+    second: grimgot_7
   - first:
       213: -4827033234146628907
-    second: MiddleWall
+    second: grimgot_8
   - first:
       213: 4174072113683788405
-    second: MiddleRightWall
+    second: grimgot_9
   - first:
       213: 4818850504918268693
-    second: BottomLeftWall
+    second: grimgot_10
   - first:
       213: -1092546242199563389
-    second: BottomMiddleWall
+    second: grimgot_11
   - first:
       213: 5059421625028588509
-    second: BottomRightWall
+    second: grimgot_12
+  - first:
+      213: -5663421143929834617
+    second: grimgot_13
+  - first:
+      213: -142193696968378738
+    second: grimgot_14
+  - first:
+      213: 3710024022357019930
+    second: grimgot_15
+  - first:
+      213: 2263174264166985344
+    second: grimgot_16
+  - first:
+      213: -1545108832979433835
+    second: grimgot_17
+  - first:
+      213: -1986807716183683157
+    second: grimgot_18
+  - first:
+      213: 7846788299361135032
+    second: grimgot_19
+  - first:
+      213: 8524011935071921953
+    second: grimgot_20
+  - first:
+      213: 1619249848938116933
+    second: grimgot_21
+  - first:
+      213: 7103850914790599879
+    second: grimgot_22
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -142,7 +172,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TopLeftWall
+      name: grimgot_0
       rect:
         serializedVersion: 2
         x: 48
@@ -163,7 +193,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TopMiddleWall
+      name: grimgot_1
       rect:
         serializedVersion: 2
         x: 64
@@ -184,7 +214,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TopRightWall
+      name: grimgot_2
       rect:
         serializedVersion: 2
         x: 80
@@ -205,7 +235,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DwarfRun1
+      name: grimgot_3
       rect:
         serializedVersion: 2
         x: 128
@@ -226,7 +256,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DwarfRun2
+      name: grimgot_4
       rect:
         serializedVersion: 2
         x: 144
@@ -247,7 +277,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DwarfRun3
+      name: grimgot_5
       rect:
         serializedVersion: 2
         x: 160
@@ -268,7 +298,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DwarfRun4
+      name: grimgot_6
       rect:
         serializedVersion: 2
         x: 176
@@ -289,7 +319,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiddleLeftWall
+      name: grimgot_7
       rect:
         serializedVersion: 2
         x: 48
@@ -310,7 +340,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiddleWall
+      name: grimgot_8
       rect:
         serializedVersion: 2
         x: 64
@@ -331,7 +361,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiddleRightWall
+      name: grimgot_9
       rect:
         serializedVersion: 2
         x: 80
@@ -352,7 +382,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BottomLeftWall
+      name: grimgot_10
       rect:
         serializedVersion: 2
         x: 48
@@ -373,7 +403,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BottomMiddleWall
+      name: grimgot_11
       rect:
         serializedVersion: 2
         x: 64
@@ -394,7 +424,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BottomRightWall
+      name: grimgot_12
       rect:
         serializedVersion: 2
         x: 80
@@ -410,6 +440,216 @@ TextureImporter:
       bones: []
       spriteID: dd332c8792da63640800000000000000
       internalID: 5059421625028588509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimgot_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78330a6c97c7761b0800000000000000
+      internalID: -5663421143929834617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimgot_14
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8676e20693d60ef0800000000000000
+      internalID: -142193696968378738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimgot_15
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1d81c81137ac7330800000000000000
+      internalID: 3710024022357019930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimgot_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08eaa70a009686f10800000000000000
+      internalID: 2263174264166985344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimgot_17
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59641f6e3bbae8ae0800000000000000
+      internalID: -1545108832979433835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimgot_18
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bafcddf98e07d64e0800000000000000
+      internalID: -1986807716183683157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimgot_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b9ac1b526465ec60800000000000000
+      internalID: 7846788299361135032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimgot_20
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 127e62b51bf5b4670800000000000000
+      internalID: 8524011935071921953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimgot_21
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 547bf80982bb87610800000000000000
+      internalID: 1619249848938116933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimgot_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cc6d69e4c2f59260800000000000000
+      internalID: 7103850914790599879
       vertices: []
       indices: 
       edges: []
