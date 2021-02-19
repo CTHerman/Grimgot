@@ -146,3 +146,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   whoCanDestroy: 000001
   objectToRemove: {fileID: 0}
+  activated: 0
+  spriteRenderer: {fileID: 8389275093685341472}
+  activatedSpirte: {fileID: 8405470088182405617, guid: 84e1fbf459f5f784694d6143f2485a97, type: 3}
