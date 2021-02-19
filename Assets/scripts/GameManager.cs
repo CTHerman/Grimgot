@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     public float previousSwitch;
     public GameObject[] statusPanels;
     public bool[] trappedDwarfs;
+    public int savedCitizens;
 
     //public AudioManager audioManager;
 
