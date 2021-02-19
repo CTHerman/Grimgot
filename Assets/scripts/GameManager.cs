@@ -32,6 +32,7 @@ public class GameManager : MonoBehaviour
                 trappedDwarfs[i] = false;
             } else
             {
+                setTrappedStatusPanel(i);
                 trappedDwarfs[i] = true;
             }
         }
@@ -115,7 +116,6 @@ public class GameManager : MonoBehaviour
             AudioManager.Play(5);
         }
 
-
     }
 
     public void setActiveStatusPanel(int dwarfId)
@@ -128,6 +128,14 @@ public class GameManager : MonoBehaviour
         statusPanels[dwarfId].GetComponent<Image>().color = new Color32(255, 255, 225, 80);
     }
 
+    public void setTrappedStatusPanel(int dwarfId)
+    {
+        statusPanels[dwarfId].transform.GetChild(0).GetComponent<Image>().color = new Color32(60, 60, 60, 100);
+        statusPanels[dwarfId].transform.GetChild(1).GetComponent<Image>().color = new Color32(0, 0, 0, 255);
+        statusPanels[dwarfId].transform.GetChild(2).GetComponent<Image>().color = new Color32(0, 0, 0, 255);
+        statusPanels[dwarfId].transform.GetChild(3).GetComponent<Image>().color = new Color32(0, 0, 0, 255);
+    }
+
     public bool isDwarfTrapped(int dwarfId)
     {
         return trappedDwarfs[dwarfId];
@@ -136,5 +144,10 @@ public class GameManager : MonoBehaviour
     public void freeDwarf(int dwarfId)
     {
         trappedDwarfs[dwarfId] = false;
+        statusPanels[dwarfId].transform.GetChild(0).GetComponent<Image>().color = new Color32(255, 255, 255, 255);
+        statusPanels[dwarfId].transform.GetChild(1).GetComponent<Image>().color = new Color32(255, 255, 255, 255);
+        statusPanels[dwarfId].transform.GetChild(2).GetComponent<Image>().color = new Color32(255, 255, 255, 255);
+        statusPanels[dwarfId].transform.GetChild(3).GetComponent<Image>().color = new Color32(255, 255, 255, 255);
     }
+
 }

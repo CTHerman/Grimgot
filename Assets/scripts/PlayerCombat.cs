@@ -7,6 +7,7 @@ public class PlayerCombat : MonoBehaviour
 
     private Animator animator;
     public int dwarfId;
+    public int dwarfHp;
     GameManager gameManager;
 
     public Transform attackPoint;
@@ -40,12 +41,13 @@ public class PlayerCombat : MonoBehaviour
 
         Collider2D[] hitStuff = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
 
-        foreach(Collider2D hitThing in hitStuff)
+        foreach (Collider2D hitThing in hitStuff)
         {
-            Debug.Log("Item hit: " + hitThing.name);
-            if(hitThing.name.StartsWith("TrappedDwarf"))
+            Debug.Log("Item hit: " + hitThing.name + " on layer " + hitThing.gameObject.layer);
+            // 6 is destructable object layer
+            if (hitThing.gameObject.layer.Equals(6))
             {
-                hitThing.GetComponent<TrappedDwarf>().destoryed();
+                hitThing.GetComponent<DestructableObject>().destroy(dwarfId);
             }
         }
 

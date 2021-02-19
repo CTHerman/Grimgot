@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 7188345668322338361}
   - component: {fileID: 6985166312069800445}
   - component: {fileID: 6184631207904563883}
-  m_Layer: 0
+  - component: {fileID: 4400420341657610180}
+  m_Layer: 6
   m_Name: WoodenBarrier
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -131,3 +132,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &4400420341657610180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7188345668322338363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e209d647bf91364380539384e4de811, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whoCanDestroy: 010000
