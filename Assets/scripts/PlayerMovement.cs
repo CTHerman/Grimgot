@@ -56,10 +56,7 @@ public class PlayerMovement : MonoBehaviour {
             {
                 sr.flipX = false;
             }
-            if (Input.GetButtonDown("Fire1"))
-            {
-                animator.SetTrigger("Attack");
-            }
+
         }
 
 	}

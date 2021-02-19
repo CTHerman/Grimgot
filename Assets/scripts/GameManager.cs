@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public float switchCoolDown;
     public float previousSwitch;
     public GameObject[] statusPanels;
+    public bool[] trappedDwarfs;
 
     //public AudioManager audioManager;
 
@@ -21,7 +22,19 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         activeDwarfId = 0;
+        //set active dwarf and assign the other two as trapped
+        trappedDwarfs = new bool[dwarfCount];
         setActiveStatusPanel(activeDwarfId);
+        for(int i = 0; i < dwarfCount; i++)
+        {
+            if(i == activeDwarfId)
+            {
+                trappedDwarfs[i] = false;
+            } else
+            {
+                trappedDwarfs[i] = true;
+            }
+        }
         inputEnabled = true;
     }
 
@@ -63,26 +76,65 @@ public class GameManager : MonoBehaviour
 
     public bool canSwitchDwarf()
     {
-        return (previousSwitch + switchCoolDown) < Time.frameCount;
+        return ((previousSwitch + switchCoolDown) < Time.frameCount);
+    }
+
+    public int getNextDwarf(int dwarfId)
+    {
+
+        Debug.Log("get next dwarf begin with " + dwarfId);
+        int dwarfIndex = 0;
+        int nextDwarf = dwarfId;
+        while(dwarfIndex < dwarfCount)
+        {
+            nextDwarf = (nextDwarf + 1) % dwarfCount;
+            Debug.Log("check next " + nextDwarf);
+            if (!trappedDwarfs[nextDwarf])
+            {
+                Debug.Log(nextDwarf + " is not trapped");
+                return nextDwarf;
+            }
+            Debug.Log(nextDwarf + " is trapped");
+            dwarfIndex++;
+        }
+        //return same id if no one else free yet
+        return dwarfId;
     }
 
     public void switchActiveDwarf(int dwarfId)
     {
-        Debug.Log("Changing dwarf to " + (dwarfId + 1) % dwarfCount);
-        previousSwitch = Time.frameCount;
-        setInactiveStatusPanel(activeDwarfId);
-        activeDwarfId = (dwarfId + 1) % dwarfCount;
-        setActiveStatusPanel(activeDwarfId);
-        AudioManager.Play(5);
+
+        int nextDwarf = getNextDwarf(dwarfId);
+        if(nextDwarf != dwarfId)
+        {
+            Debug.Log("Changing dwarf to " + nextDwarf);
+            previousSwitch = Time.frameCount;
+            setInactiveStatusPanel(dwarfId);
+            setActiveStatusPanel(nextDwarf);
+            activeDwarfId = nextDwarf;
+            AudioManager.Play(5);
+        }
+
+
     }
 
     public void setActiveStatusPanel(int dwarfId)
     {
-        statusPanels[activeDwarfId].GetComponent<Image>().color = new Color32(0, 150, 30, 255);
+        statusPanels[dwarfId].GetComponent<Image>().color = new Color32(0, 150, 30, 255);
     }
 
     public void setInactiveStatusPanel(int dwarfId)
     {
-        statusPanels[activeDwarfId].GetComponent<Image>().color = new Color32(255, 255, 225, 80);
+        statusPanels[dwarfId].GetComponent<Image>().color = new Color32(255, 255, 225, 80);
+    }
+
+    public bool isDwarfTrapped(int dwarfId)
+    {
+        return trappedDwarfs[dwarfId];
+    }
+
+    public void freeDwarf(int dwarfId)
+    {
+        trappedDwarfs[dwarfId] = false;
     }
 }
