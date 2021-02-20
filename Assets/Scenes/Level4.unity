@@ -136,7 +136,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6115907223938803177, guid: 1725fb9c4e7a04f49be209440cb77a6f, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6115907223938803177, guid: 1725fb9c4e7a04f49be209440cb77a6f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -373,7 +373,7 @@ Transform:
   - {fileID: 2033264680}
   - {fileID: 857714312}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &115855917
 GameObject:
@@ -413,7 +413,7 @@ Transform:
   - {fileID: 766175284}
   - {fileID: 335038918}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &167025776 stripped
 Transform:
@@ -705,7 +705,7 @@ Transform:
   m_Children:
   - {fileID: 932155026}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &561118159 stripped
 Transform:
@@ -813,6 +813,10 @@ PrefabInstance:
     - target: {fileID: -3881580591481923711, guid: 9b4f71c25e4e36b4d844d28e1f489889, type: 3}
       propertyPath: dwarfDamage.Array.data[1]
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4691262841708738201, guid: 9b4f71c25e4e36b4d844d28e1f489889, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4829407083200917073, guid: 9b4f71c25e4e36b4d844d28e1f489889, type: 3}
       propertyPath: m_RootOrder
@@ -3731,6 +3735,10 @@ PrefabInstance:
       propertyPath: dwarfDamage.Array.data[1]
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4691262841708738201, guid: 9b4f71c25e4e36b4d844d28e1f489889, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4829407083200917073, guid: 9b4f71c25e4e36b4d844d28e1f489889, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -4368,7 +4376,7 @@ RectTransform:
   m_Children:
   - {fileID: 1843428258}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -4514,7 +4522,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1685170985
 PrefabInstance:
@@ -4739,7 +4747,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1801916507
 MonoBehaviour:
@@ -4997,7 +5005,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4937090736700259922, guid: 0ac4b9ebb70318a45903f16aaeb3a70f, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4937090736700259922, guid: 0ac4b9ebb70318a45903f16aaeb3a70f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5119,7 +5127,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4937090736700259922, guid: 0ac4b9ebb70318a45903f16aaeb3a70f, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4937090736700259922, guid: 0ac4b9ebb70318a45903f16aaeb3a70f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5210,7 +5218,7 @@ MonoBehaviour:
   - {fileID: 288752003}
   - {fileID: 1762740186}
   - {fileID: 1535265160}
-  trappedDwarfs: 
+  trappedDwarfs: 000001
   savedCitizens: 0
   defeatedEnemys: 0
   cc: {fileID: 0}
@@ -5226,7 +5234,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2033264679
 GameObject:
@@ -7783,7 +7791,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9205366444093281467, guid: c84f48906dea1124da100e67bb7a617f, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9205366444093281467, guid: c84f48906dea1124da100e67bb7a617f, type: 3}
       propertyPath: m_LocalPosition.x

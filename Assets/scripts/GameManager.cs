@@ -12,7 +12,9 @@ public class GameManager : MonoBehaviour
     public int dwarfCount;
     public float switchCoolDown;
     public float previousSwitch;
+    private float timer;
     public GameObject[] statusPanels;
+    public GameObject[] menuPanels;
     public bool[] trappedDwarfs;
     public int savedCitizens;
     public int defeatedEnemys;
@@ -23,18 +25,12 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         activeDwarfId = 0;
-        //set active dwarf and assign the other two as trapped
-        trappedDwarfs = new bool[dwarfCount];
         setActiveStatusPanel(activeDwarfId);
         for(int i = 0; i < dwarfCount; i++)
         {
-            if(i == activeDwarfId)
-            {
-                trappedDwarfs[i] = false;
-            } else
+            if(trappedDwarfs[i])
             {
                 setTrappedStatusPanel(i);
-                trappedDwarfs[i] = true;
             }
         }
         inputEnabled = true;
@@ -49,36 +45,18 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-    }
-
-
-    public void GameOver()
-    {
-        Time.timeScale = 0f;
-        //gameOverUI.SetActive(true);
-    }
-
-    public void RestartLevel()
-    {
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
-
-    public void ReturnToTitle()
-    {
-        ///SceneManager.LoadScene(0);
+        timer += Time.deltaTime;
     }
 
     public void toggleFreezeGame(bool freeze)
     {
-        playerAnimator.SetBool("inputEnabled", freeze);
         inputEnabled = !freeze;
         Time.timeScale = freeze ? 0f : 1f;
     }
 
     public bool canSwitchDwarf()
     {
-        return ((previousSwitch + switchCoolDown) < Time.frameCount);
+        return ((previousSwitch + switchCoolDown) < timer);
     }
 
     public int getNextDwarf(int dwarfId)
@@ -110,7 +88,7 @@ public class GameManager : MonoBehaviour
         if(nextDwarf != dwarfId)
         {
             Debug.Log("Changing dwarf to " + nextDwarf);
-            previousSwitch = Time.frameCount;
+            previousSwitch = timer;
             setInactiveStatusPanel(dwarfId);
             setActiveStatusPanel(nextDwarf);
             activeDwarfId = nextDwarf;
@@ -150,6 +128,36 @@ public class GameManager : MonoBehaviour
         statusPanels[dwarfId].transform.GetChild(1).GetComponent<Image>().color = new Color32(255, 255, 255, 255);
         statusPanels[dwarfId].transform.GetChild(2).GetComponent<Image>().color = new Color32(255, 255, 255, 255);
         statusPanels[dwarfId].transform.GetChild(3).GetComponent<Image>().color = new Color32(255, 255, 255, 255);
+    }
+
+    public void updateHealth(int dwarfId, int dwarfHp)
+    {
+        if (dwarfHp < 3)
+        {
+            statusPanels[dwarfId].transform.GetChild(1).GetComponent<Image>().color = new Color32(0, 0, 0, 255);
+        }
+        if (dwarfHp < 2)
+        {
+            statusPanels[dwarfId].transform.GetChild(2).GetComponent<Image>().color = new Color32(0, 0, 0, 255);
+        }
+        if (dwarfHp < 1)
+        {
+            statusPanels[dwarfId].transform.GetChild(3).GetComponent<Image>().color = new Color32(0, 0, 0, 255);
+        }
+    }
+
+    public void triggerGameOver()
+    {
+        AudioManager.Play(12);
+        toggleFreezeGame(true);
+        menuPanels[1].SetActive(true);
+    }
+
+
+    public void RestartLevel()
+    {
+        toggleFreezeGame(false);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
 }

@@ -1,11 +1,11 @@
 using UnityEngine;
-using TMPro;
+using UnityEngine.UI;
 
 public class ButtonScript : MonoBehaviour
 {
 
 
-    public TextMeshProUGUI text;
+    public Text text;
     public Color defaultColor;
     public Color hoverColor;
     public Color selectColor;
@@ -22,7 +22,7 @@ public class ButtonScript : MonoBehaviour
 
     public void ChangeColorSelected()
     {
-        text.color = selectColor;
+        //text.color = selectColor;
     }
 
 

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerCombat : MonoBehaviour
 {
@@ -10,27 +11,37 @@ public class PlayerCombat : MonoBehaviour
     public int dwarfHp;
     GameManager gameManager;
     public GameObject fireBall;
-
     public Transform attackPoint;
     public float attackRange = 0.5f;
     public LayerMask enemyLayers;
+    public float attackCoolDown; 
+    public float takedmgCoolDown;
+    public float previousAttack;
+    public float previousTakedmg;
+    private SpriteRenderer sr;
+    private float timer;
 
     private void Awake()
     {
         gameManager = FindObjectOfType<GameManager>();
         animator = GetComponent<Animator>();
+        sr = GetComponent<SpriteRenderer>();
+        previousAttack = 0;
+        previousTakedmg = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
 
+        timer += Time.deltaTime;
         if (gameManager.inputEnabled && gameManager.activeDwarfId == dwarfId)
         {
-            if (Input.GetButtonDown("Fire1"))
+            if (Input.GetButtonDown("Fire1") && ((previousAttack + attackCoolDown) < timer) && gameManager.inputEnabled)
             {
+                previousAttack = timer;
                 //check if mage, hard coding for now since we have only 1 project user
-                if(dwarfId == 2)
+                if (dwarfId == 2)
                 {
                     rangedAttack();
                 } else
@@ -40,6 +51,13 @@ public class PlayerCombat : MonoBehaviour
             }
         }
 
+        
+        if(previousTakedmg > 0 && (previousTakedmg + takedmgCoolDown) < timer)
+        {
+            previousTakedmg = 0;
+            sr.color = new Color32(255, 255, 255, 255); 
+        }
+        
     }
 
     private void meleeAttack()
@@ -61,6 +79,27 @@ public class PlayerCombat : MonoBehaviour
             else if (hitThing.gameObject.layer.Equals(7))
             {
                 hitThing.GetComponent<Enemy>().applyDamage(dwarfId);
+            }
+        }
+
+    }
+
+    public void takeDamage(int damage)
+    {
+        if ((previousTakedmg + takedmgCoolDown) < timer) {
+            Debug.Log("Took damage!! cooldown: " + previousTakedmg);
+            previousTakedmg = timer;
+            dwarfHp -= damage;
+            gameManager.updateHealth(dwarfId, dwarfHp);
+            sr.color = new Color32(165, 90, 90, 255);
+            if (dwarfHp < 1)
+            {
+                Debug.Log("Dwarf has died!");
+                gameManager.triggerGameOver();
+                animator.SetBool("inputEnabled", gameManager.inputEnabled);
+            } else
+            {
+                AudioManager.Play(10);
             }
         }
 
