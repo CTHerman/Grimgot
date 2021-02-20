@@ -10,6 +10,8 @@ public class PlayerMovement : MonoBehaviour {
 	private Vector2 movement;
 	private Animator animator;
 	private SpriteRenderer sr;
+    public Transform attackPoint;
+    private int direction;
 
     GameManager gameManager;
 
@@ -18,7 +20,9 @@ public class PlayerMovement : MonoBehaviour {
         rb = GetComponent<Rigidbody2D>();
 		animator = GetComponent<Animator>();
 		sr = GetComponent<SpriteRenderer>();
-	}
+        direction = 1; //facing right
+
+    }
 
 	// Start is called before the first frame update
 	void Start()
@@ -51,10 +55,22 @@ public class PlayerMovement : MonoBehaviour {
             if (Input.GetAxis("Horizontal") < 0)
             {
                 sr.flipX = true;
+                // hacky and will only work with left/right movement
+                if(direction != -1)
+                {
+                    direction = -1;
+                    flipAttackPointOnX();
+                }
             }
             if (Input.GetAxis("Horizontal") > 0)
             {
                 sr.flipX = false;
+                // hacky and will only work with left/right movement
+                if (direction != 1)
+                {
+                    direction = 1;
+                    flipAttackPointOnX();
+                }
             }
 
         }
@@ -65,5 +81,10 @@ public class PlayerMovement : MonoBehaviour {
 		rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
 	}
 
-
+    private void flipAttackPointOnX()
+    {
+        attackPoint.transform.localPosition = new Vector3(attackPoint.transform.localPosition.x * -1,
+                                                       attackPoint.transform.localPosition.y,
+                                                       attackPoint.transform.localPosition.z);
+    }
 }

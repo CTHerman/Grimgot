@@ -164,5 +164,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe5302b035aebcc4e8545a4f0640c31e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trappedDwarfId: 2
-  trappeDwarf: {fileID: 547771980658988114, guid: 1f163b23d95c1014088b637ef067e59e, type: 3}
+  whoCanDestroy: 
+  trappedDwarfId: 1
+  trappeDwarf: {fileID: 842106230879781609, guid: 1725fb9c4e7a04f49be209440cb77a6f, type: 3}

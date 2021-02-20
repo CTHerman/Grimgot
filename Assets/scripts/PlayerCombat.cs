@@ -28,13 +28,13 @@ public class PlayerCombat : MonoBehaviour
         {
             if (Input.GetButtonDown("Fire1"))
             {
-                Attack();
+                meleeAttack();
             }
         }
 
     }
 
-    private void Attack()
+    private void meleeAttack()
     {
 
         animator.SetTrigger("Attack");
@@ -49,8 +49,19 @@ public class PlayerCombat : MonoBehaviour
             {
                 hitThing.GetComponent<DestructableObject>().destroy(dwarfId);
             }
+            // 7 is enemy layer
+            else if (hitThing.gameObject.layer.Equals(7))
+            {
+                hitThing.GetComponent<Enemy>().applyDamage(dwarfId);
+            }
         }
 
+    }
+
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
     }
 
 }

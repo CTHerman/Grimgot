@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    //public PlayerVariables playerVariables;
     public Animator playerAnimator;
     public bool inputEnabled = true;
     public int activeDwarfId = 0;
@@ -16,9 +15,9 @@ public class GameManager : MonoBehaviour
     public GameObject[] statusPanels;
     public bool[] trappedDwarfs;
     public int savedCitizens;
+    public int defeatedEnemys;
 	public CameraController cc;
 
-    //public AudioManager audioManager;
 
     //stuff to be done before the level starts
     private void Awake()

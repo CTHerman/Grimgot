@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 4829407083200917078}
   - component: {fileID: 4829407083200917079}
   - component: {fileID: 4829407083200917076}
-  - component: {fileID: 4829407083200917072}
-  m_Layer: 6
+  - component: {fileID: -3881580591481923711}
+  m_Layer: 7
   m_Name: GoblinPatrol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -132,7 +132,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &4829407083200917072
+--- !u!114 &-3881580591481923711
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -141,7 +141,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 4829407083200917077}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e209d647bf91364380539384e4de811, type: 3}
+  m_Script: {fileID: 11500000, guid: 2baa836b44d482f4c9960165d14a98a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  whoCanDestroy: 010100
+  dwarfDamage: 
+  hp: 0
+  statusPanel: {fileID: 0}

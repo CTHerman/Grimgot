@@ -316,7 +316,7 @@ Transform:
   - {fileID: 2033264680}
   - {fileID: 857714312}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &115855917
 GameObject:
@@ -2483,16 +2483,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1 &965953862 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2698081795696248699, guid: c84f48906dea1124da100e67bb7a617f, type: 3}
-  m_PrefabInstance: {fileID: 2698081795646275881}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &965953869 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2698081795696248689, guid: c84f48906dea1124da100e67bb7a617f, type: 3}
-  m_PrefabInstance: {fileID: 2698081795646275881}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &998172179
 GameObject:
   m_ObjectHideFlags: 0
@@ -3612,7 +3602,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1801916507
 MonoBehaviour:
@@ -3626,10 +3616,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 625929f6035544645a82806118953d18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 965953869}
-  dwarfWarrior: {fileID: 965953862}
-  dwarfCraftsman: {fileID: 8137664567655840006, guid: 1725fb9c4e7a04f49be209440cb77a6f, type: 3}
-  dwarfMage: {fileID: 6512601661848352133, guid: 950f362c45b901540869214918135d42, type: 3}
+  target: {fileID: 0}
 --- !u!1 &1841460870
 GameObject:
   m_ObjectHideFlags: 0
@@ -3966,6 +3953,7 @@ MonoBehaviour:
   - {fileID: 1535265160}
   trappedDwarfs: 
   savedCitizens: 0
+  defeatedEnemys: 0
   cc: {fileID: 0}
 --- !u!4 &2010548748
 Transform:
@@ -6302,6 +6290,10 @@ PrefabInstance:
     - target: {fileID: 2698081795696248699, guid: c84f48906dea1124da100e67bb7a617f, type: 3}
       propertyPath: m_Name
       value: DwarfWarrior
+      objectReference: {fileID: 0}
+    - target: {fileID: 9205366444093281467, guid: c84f48906dea1124da100e67bb7a617f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.97
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c84f48906dea1124da100e67bb7a617f, type: 3}
