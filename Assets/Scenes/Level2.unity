@@ -2573,6 +2573,83 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1001 &965888070
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8924325272128657740, guid: 0d6daa46ee31d6f4ea87cccfa7568b9c, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924325272128657740, guid: 0d6daa46ee31d6f4ea87cccfa7568b9c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 30.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924325272128657740, guid: 0d6daa46ee31d6f4ea87cccfa7568b9c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924325272128657740, guid: 0d6daa46ee31d6f4ea87cccfa7568b9c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.1897918
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924325272128657740, guid: 0d6daa46ee31d6f4ea87cccfa7568b9c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924325272128657740, guid: 0d6daa46ee31d6f4ea87cccfa7568b9c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924325272128657740, guid: 0d6daa46ee31d6f4ea87cccfa7568b9c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924325272128657740, guid: 0d6daa46ee31d6f4ea87cccfa7568b9c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924325272128657740, guid: 0d6daa46ee31d6f4ea87cccfa7568b9c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924325272128657740, guid: 0d6daa46ee31d6f4ea87cccfa7568b9c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924325272128657740, guid: 0d6daa46ee31d6f4ea87cccfa7568b9c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924325272128657741, guid: 0d6daa46ee31d6f4ea87cccfa7568b9c, type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 2010548747}
+    - target: {fileID: 8924325272128657741, guid: 0d6daa46ee31d6f4ea87cccfa7568b9c, type: 3}
+      propertyPath: sceneIndex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924325272128657741, guid: 0d6daa46ee31d6f4ea87cccfa7568b9c, type: 3}
+      propertyPath: totalGoblinsToExit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924325272128657742, guid: 0d6daa46ee31d6f4ea87cccfa7568b9c, type: 3}
+      propertyPath: m_Size.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924325272128657742, guid: 0d6daa46ee31d6f4ea87cccfa7568b9c, type: 3}
+      propertyPath: m_Size.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924325272128657743, guid: 0d6daa46ee31d6f4ea87cccfa7568b9c, type: 3}
+      propertyPath: m_Name
+      value: ExitZone
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0d6daa46ee31d6f4ea87cccfa7568b9c, type: 3}
 --- !u!4 &965953869 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9205366444093281467, guid: c84f48906dea1124da100e67bb7a617f, type: 3}
@@ -3534,7 +3611,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1762740186
 GameObject:
@@ -3955,7 +4032,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4937090736700259922, guid: 0ac4b9ebb70318a45903f16aaeb3a70f, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4937090736700259922, guid: 0ac4b9ebb70318a45903f16aaeb3a70f, type: 3}
       propertyPath: m_LocalPosition.x
