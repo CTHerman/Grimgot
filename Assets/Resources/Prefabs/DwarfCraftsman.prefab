@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 8137664567655840028}
   - component: {fileID: 5023724209859553410}
   m_Layer: 0
-  m_Name: DwarfCraftsman 1
+  m_Name: DwarfCraftsman
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -131,7 +131,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.25}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -142,8 +142,8 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_Size: {x: 0.25, y: 0.5}
+  m_EdgeRadius: 0.001
 --- !u!50 &8137664567655840000
 Rigidbody2D:
   serializedVersion: 4
@@ -211,6 +211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dwarfId: 1
+  dwarfHp: 3
   attackPoint: {fileID: 2852432151735816933}
   attackRange: 0.5
   enemyLayers:

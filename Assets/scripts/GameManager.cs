@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     public GameObject[] statusPanels;
     public bool[] trappedDwarfs;
     public int savedCitizens;
+	public CameraController cc;
 
     //public AudioManager audioManager;
 
@@ -43,7 +44,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+		cc = FindObjectOfType<CameraController>();   
     }
 
     // Update is called once per frame
@@ -114,6 +115,7 @@ public class GameManager : MonoBehaviour
             setInactiveStatusPanel(dwarfId);
             setActiveStatusPanel(nextDwarf);
             activeDwarfId = nextDwarf;
+			cc.SetTarget(nextDwarf);
             AudioManager.Play(5);
         }
 
