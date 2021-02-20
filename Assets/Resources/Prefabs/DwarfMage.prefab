@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2319044090256513375
+--- !u!1 &1738242516083124567
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,29 +8,29 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6779136141740307388}
-  m_Layer: 0
+  - component: {fileID: 2313584859402805100}
+  m_Layer: 9
   m_Name: AttackPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6779136141740307388
+--- !u!4 &2313584859402805100
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2319044090256513375}
+  m_GameObject: {fileID: 1738242516083124567}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.6, y: -0.28, z: 0}
+  m_LocalPosition: {x: 0.75, y: -0.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 5840145373356898096}
+  m_Father: {fileID: 8854895099968866352}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &3873996970173661649
+--- !u!1 &8380963559300329060
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -38,42 +38,42 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5840145373356898096}
-  - component: {fileID: 7162574477614132413}
-  - component: {fileID: 7218634107464330107}
-  - component: {fileID: 6756274052287482293}
-  - component: {fileID: 4757898802919718152}
-  - component: {fileID: 8940922819586060984}
-  - component: {fileID: 611511226508069698}
-  m_Layer: 0
+  - component: {fileID: 8854895099968866352}
+  - component: {fileID: 1256621863615939433}
+  - component: {fileID: 4044068081055668485}
+  - component: {fileID: 6369415540652470238}
+  - component: {fileID: 4971615358883531263}
+  - component: {fileID: 9157495065903790749}
+  - component: {fileID: 4798406329820760702}
+  m_Layer: 9
   m_Name: DwarfMage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5840145373356898096
+--- !u!4 &8854895099968866352
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3873996970173661649}
+  m_GameObject: {fileID: 8380963559300329060}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.63, y: 0.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 6779136141740307388}
+  - {fileID: 2313584859402805100}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &7162574477614132413
+--- !u!212 &1256621863615939433
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3873996970173661649}
+  m_GameObject: {fileID: 8380963559300329060}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -118,13 +118,13 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &7218634107464330107
+--- !u!61 &4044068081055668485
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3873996970173661649}
+  m_GameObject: {fileID: 8380963559300329060}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -144,14 +144,14 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.25, y: 0.5}
   m_EdgeRadius: 0.001
---- !u!50 &6756274052287482293
+--- !u!50 &6369415540652470238
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3873996970173661649}
+  m_GameObject: {fileID: 8380963559300329060}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -165,13 +165,13 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &4757898802919718152
+--- !u!114 &4971615358883531263
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3873996970173661649}
+  m_GameObject: {fileID: 8380963559300329060}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e4e974fc383424d4aba290a7a9fe69ad, type: 3}
@@ -179,15 +179,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   dwarfId: 2
-  attackPoint: {fileID: 6779136141740307388}
---- !u!95 &8940922819586060984
+  attackPoint: {fileID: 2313584859402805100}
+--- !u!95 &9157495065903790749
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3873996970173661649}
+  m_GameObject: {fileID: 8380963559300329060}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: c5873a6f120557442b67b1d2a0cc0a2f, type: 2}
@@ -199,13 +199,13 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &611511226508069698
+--- !u!114 &4798406329820760702
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3873996970173661649}
+  m_GameObject: {fileID: 8380963559300329060}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a493d63b915f443419efaeca1775fb27, type: 3}
@@ -213,7 +213,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dwarfId: 2
   dwarfHp: 3
-  attackPoint: {fileID: 6779136141740307388}
+  fireBall: {fileID: 1428678964987615736, guid: 95b066b880310ba4b88f03c079d87bef, type: 3}
+  attackPoint: {fileID: 2313584859402805100}
   attackRange: 0.5
   enemyLayers:
     serializedVersion: 2

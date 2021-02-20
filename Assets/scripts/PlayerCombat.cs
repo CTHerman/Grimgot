@@ -9,6 +9,7 @@ public class PlayerCombat : MonoBehaviour
     public int dwarfId;
     public int dwarfHp;
     GameManager gameManager;
+    public GameObject fireBall;
 
     public Transform attackPoint;
     public float attackRange = 0.5f;
@@ -28,7 +29,14 @@ public class PlayerCombat : MonoBehaviour
         {
             if (Input.GetButtonDown("Fire1"))
             {
-                meleeAttack();
+                //check if mage, hard coding for now since we have only 1 project user
+                if(dwarfId == 2)
+                {
+                    rangedAttack();
+                } else
+                {
+                    meleeAttack();
+                }
             }
         }
 
@@ -58,6 +66,12 @@ public class PlayerCombat : MonoBehaviour
 
     }
 
+    private void rangedAttack()
+    {
+        animator.SetTrigger("Attack");
+        GameObject newFireBall = Instantiate(fireBall, attackPoint.position, attackPoint.rotation);
+        //newFireBall.GetComponent<DwarfFireBall>().direction =
+    }
 
     private void OnDrawGizmosSelected()
     {

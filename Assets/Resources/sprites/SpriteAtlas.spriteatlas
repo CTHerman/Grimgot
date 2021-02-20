@@ -45,7 +45,7 @@ SpriteAtlas:
     packables:
     - {fileID: 2800000, guid: 84e1fbf459f5f784694d6143f2485a97, type: 3}
     - {fileID: 2800000, guid: 389c63192d443a244a5fc7cf93257cbe, type: 3}
-    totalSpriteSurfaceArea: 26272
+    totalSpriteSurfaceArea: 26412
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -138,8 +138,10 @@ SpriteAtlas:
   - {fileID: 5485661754036151735, guid: 389c63192d443a244a5fc7cf93257cbe, type: 3}
   - {fileID: 6308954569755975896, guid: 389c63192d443a244a5fc7cf93257cbe, type: 3}
   - {fileID: -4140233937292292912, guid: 389c63192d443a244a5fc7cf93257cbe, type: 3}
+  - {fileID: -6660253641514159914, guid: 389c63192d443a244a5fc7cf93257cbe, type: 3}
   - {fileID: 3184517468107158521, guid: 389c63192d443a244a5fc7cf93257cbe, type: 3}
   - {fileID: 5931288377912515604, guid: 389c63192d443a244a5fc7cf93257cbe, type: 3}
+  - {fileID: -1337339198752928054, guid: 389c63192d443a244a5fc7cf93257cbe, type: 3}
   m_PackedSpriteNamesToIndex:
   - MRWall
   - grimgot_5
@@ -228,8 +230,10 @@ SpriteAtlas:
   - grimgot2_27
   - grimgot2_26
   - grimgot2_25
+  - grimgot2_41
   - grimgot2_24
   - grimgot2_40
+  - grimgot2_42
   m_RenderDataMap: {}
   m_Tag: SpriteAtlas
   m_IsVariant: 0

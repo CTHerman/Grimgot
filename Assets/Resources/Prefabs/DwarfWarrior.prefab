@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 9205366443174096282}
   - component: {fileID: 9205366443174096285}
   - component: {fileID: 9205366443174096284}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DwarfWarrior
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -183,6 +183,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dwarfId: 0
   dwarfHp: 3
+  fireBall: {fileID: 0}
   attackPoint: {fileID: 9205366444905027205}
   attackRange: 0.5
   enemyLayers:
@@ -197,7 +198,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9205366444905027205}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: AttackPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}

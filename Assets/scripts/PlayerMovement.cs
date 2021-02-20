@@ -54,22 +54,18 @@ public class PlayerMovement : MonoBehaviour {
             }
             if (Input.GetAxis("Horizontal") < 0)
             {
-                sr.flipX = true;
-                // hacky and will only work with left/right movement
                 if(direction != -1)
                 {
                     direction = -1;
-                    flipAttackPointOnX();
+                    transform.Rotate(0f, 180f, 0f);
                 }
             }
             if (Input.GetAxis("Horizontal") > 0)
             {
-                sr.flipX = false;
-                // hacky and will only work with left/right movement
                 if (direction != 1)
                 {
                     direction = 1;
-                    flipAttackPointOnX();
+                    transform.Rotate(0f, 180f, 0f);
                 }
             }
 
@@ -84,7 +80,7 @@ public class PlayerMovement : MonoBehaviour {
     private void flipAttackPointOnX()
     {
         attackPoint.transform.localPosition = new Vector3(attackPoint.transform.localPosition.x * -1,
-                                                       attackPoint.transform.localPosition.y,
-                                                       attackPoint.transform.localPosition.z);
+                                                          attackPoint.transform.localPosition.y,
+                                                          attackPoint.transform.localPosition.z);
     }
 }

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1186770067143759012}
   - component: {fileID: 7045980471853152220}
   - component: {fileID: 4397760500563166831}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DwarfCraftsman
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -183,6 +183,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dwarfId: 1
   dwarfHp: 3
+  fireBall: {fileID: 0}
   attackPoint: {fileID: 2229028909001136375}
   attackRange: 0.5
   enemyLayers:
@@ -197,7 +198,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2229028909001136375}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: AttackPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
