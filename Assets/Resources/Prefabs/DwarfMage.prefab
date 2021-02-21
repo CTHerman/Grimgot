@@ -219,7 +219,9 @@ MonoBehaviour:
   enemyLayers:
     serializedVersion: 2
     m_Bits: 192
-  attackCoolDown: 1.5
+  attackCoolDown: 1
   takedmgCoolDown: 1
   previousAttack: 0
   previousTakedmg: 0
+  attackDuraction: 0
+  attackActiveTimer: 0

@@ -14,13 +14,25 @@ public class DwarfFireBall : MonoBehaviour
     public int direction = 1;
     private SpriteRenderer sr;
 
+    public float timeAlive;
+    private float timer;
+    private float createTime;
+
     void Awake()
     {
+        createTime = Time.deltaTime;
         rb.velocity = transform.right * moveSpeed * direction;
     }
     
     void Update()
     {
+        timer += Time.deltaTime;
+
+        if((createTime + timeAlive) < timer)
+        {
+            Destroy(gameObject);
+        }
+
         Collider2D[] hitStuff = Physics2D.OverlapCircleAll(rb.position, attackRange, enemyLayers);
 
         foreach (Collider2D hitThing in hitStuff)

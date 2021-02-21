@@ -57,7 +57,6 @@ public class PlayerCombat : MonoBehaviour
             //trying to allow attack hurt box to be active longer, so enemys dont appear to walk right through weapon and not die
             else if (dwarfId != 2 && attackActiveTimer > timer)
             {
-                Debug.Log("ATTACK AGAIN " + attackActiveTimer);
                 meleeAttack();
             }
         }
