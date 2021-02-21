@@ -71,4 +71,10 @@ public class MainMenuScript : MonoBehaviour
         creditsMenu.SetActive(false);
         mainMenu.SetActive(true);
     }
+
+    public void goToMainMenu()
+    {
+        AudioManager.Play(4);
+        SceneManager.LoadScene("RealMainMenu");
+    }
 }
