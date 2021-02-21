@@ -39,7 +39,10 @@ public class AudioManager : MonoBehaviour {
 	}
 
 	private void Start() {
-
+		musicSource.loop = true;
+		musicSource.clip = music;
+		musicSource.volume = .4f;
+		musicSource.Play();
 	}
 
 	private void Update() {
@@ -66,14 +69,6 @@ public class AudioManager : MonoBehaviour {
 				break;
 		}
 	}
-
-    public static void startMusic() 
-    {
-        musicSource.loop = true;
-        musicSource.clip = music;
-        musicSource.volume = .4f;
-        musicSource.Play();
-    }
 
     public static void Play(int audioSampler) {
 		switch (audioSampler) {
