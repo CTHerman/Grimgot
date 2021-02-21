@@ -9,7 +9,7 @@ public class MainMenuScript : MonoBehaviour
     public GameObject mainMenu;
     public GameObject tutorialText1;
     public GameObject tutorialText2;
-
+    public GameObject tutorialText3;
 
     // Start is called before the first frame update
     void Awake()
@@ -46,6 +46,13 @@ public class MainMenuScript : MonoBehaviour
     }
 
     public void tutText2next()
+    {
+        AudioManager.Play(4);
+        tutorialText2.SetActive(false);
+        tutorialText3.SetActive(true);
+    }
+
+    public void tutText3next()
     {
         AudioManager.Play(4);
         SceneManager.LoadScene("Level1");
