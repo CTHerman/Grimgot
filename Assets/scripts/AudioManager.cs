@@ -46,6 +46,7 @@ public class AudioManager : MonoBehaviour {
 	}
 
 	private void Update() {
+        /*
 		if (Input.GetKeyDown(KeyCode.Period)) {
 			audioSampler++;
 			if (audioSampler > 17) audioSampler = 0;
@@ -57,6 +58,7 @@ public class AudioManager : MonoBehaviour {
 		} else if (Input.GetKeyDown(KeyCode.Slash)) {
 			Play(audioSampler);
 		}
+        */
 	}
 
 	public static void Play(string name) {
