@@ -193,6 +193,8 @@ MonoBehaviour:
   takedmgCoolDown: 1
   previousAttack: 0
   previousTakedmg: 0
+  attackDuraction: 0.6
+  attackActiveTimer: 0
 --- !u!1 &6407434759008731297
 GameObject:
   m_ObjectHideFlags: 0

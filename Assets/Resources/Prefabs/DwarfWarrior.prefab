@@ -190,10 +190,11 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 192
   attackCoolDown: 1
-  keepAttackActive: 0.2
   takedmgCoolDown: 1
   previousAttack: 0
   previousTakedmg: 0
+  attackDuraction: 0.6
+  attackActiveTimer: 0
 --- !u!1 &9205366444905027204
 GameObject:
   m_ObjectHideFlags: 0

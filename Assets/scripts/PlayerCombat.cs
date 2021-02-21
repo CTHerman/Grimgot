@@ -21,6 +21,9 @@ public class PlayerCombat : MonoBehaviour
     private SpriteRenderer sr;
     private float timer;
 
+    public float attackDuraction;
+    public float attackActiveTimer;
+
     private void Awake()
     {
         gameManager = FindObjectOfType<GameManager>();
@@ -40,6 +43,7 @@ public class PlayerCombat : MonoBehaviour
             if (Input.GetButtonDown("Fire1") && ((previousAttack + attackCoolDown) < timer) && gameManager.inputEnabled)
             {
                 previousAttack = timer;
+                animator.SetTrigger("Attack");
                 //check if mage, hard coding for now since we have only 1 project user
                 if (dwarfId == 2)
                 {
@@ -47,7 +51,14 @@ public class PlayerCombat : MonoBehaviour
                 } else
                 {
                     meleeAttack();
+                    attackActiveTimer = timer + attackDuraction;
                 }
+            }
+            //trying to allow attack hurt box to be active longer, so enemys dont appear to walk right through weapon and not die
+            else if (dwarfId != 2 && attackActiveTimer > timer)
+            {
+                Debug.Log("ATTACK AGAIN " + attackActiveTimer);
+                meleeAttack();
             }
         }
 
@@ -63,13 +74,14 @@ public class PlayerCombat : MonoBehaviour
     private void meleeAttack()
     {
 
-        animator.SetTrigger("Attack");
-
         Collider2D[] hitStuff = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
 
         foreach (Collider2D hitThing in hitStuff)
         {
             Debug.Log("Item hit: " + hitThing.name + " on layer " + hitThing.gameObject.layer);
+            // hit something, so stop hitbox from spawning for duration of attack
+            attackActiveTimer = 0f;
+
             // 6 is destructable object layer
             if (hitThing.gameObject.layer.Equals(6))
             {
@@ -79,7 +91,7 @@ public class PlayerCombat : MonoBehaviour
             else if (hitThing.gameObject.layer.Equals(7))
             {
                 hitThing.GetComponent<Enemy>().applyDamage(dwarfId);
-            }
+            } 
         }
 
     }
@@ -107,7 +119,6 @@ public class PlayerCombat : MonoBehaviour
 
     private void rangedAttack()
     {
-        animator.SetTrigger("Attack");
         GameObject newFireBall = Instantiate(fireBall, attackPoint.position, attackPoint.rotation);
         //newFireBall.GetComponent<DwarfFireBall>().direction =
     }
