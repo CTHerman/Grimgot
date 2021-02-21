@@ -4361,7 +4361,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 15
   m_TargetDisplay: 0
 --- !u!224 &1588297579
 RectTransform:
@@ -5218,6 +5218,7 @@ MonoBehaviour:
   - {fileID: 288752003}
   - {fileID: 1762740186}
   - {fileID: 1535265160}
+  menuPanels: []
   trappedDwarfs: 000001
   savedCitizens: 0
   defeatedEnemys: 0

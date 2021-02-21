@@ -2582,7 +2582,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8924325272128657740, guid: 0d6daa46ee31d6f4ea87cccfa7568b9c, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8924325272128657740, guid: 0d6daa46ee31d6f4ea87cccfa7568b9c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2630,7 +2630,7 @@ PrefabInstance:
       objectReference: {fileID: 2010548747}
     - target: {fileID: 8924325272128657741, guid: 0d6daa46ee31d6f4ea87cccfa7568b9c, type: 3}
       propertyPath: sceneIndex
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8924325272128657741, guid: 0d6daa46ee31d6f4ea87cccfa7568b9c, type: 3}
       propertyPath: totalGoblinsToExit
@@ -2672,15 +2672,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8919559603892718964, guid: 4b152164fcd7af34e9ac514f0b08e1e3, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8919559603892718964, guid: 4b152164fcd7af34e9ac514f0b08e1e3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.33
+      value: 14.5
       objectReference: {fileID: 0}
     - target: {fileID: 8919559603892718964, guid: 4b152164fcd7af34e9ac514f0b08e1e3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.57
+      value: -1.5
       objectReference: {fileID: 0}
     - target: {fileID: 8919559603892718964, guid: 4b152164fcd7af34e9ac514f0b08e1e3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3511,7 +3511,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 15
   m_TargetDisplay: 0
 --- !u!224 &1588297579
 RectTransform:
@@ -4184,6 +4184,7 @@ MonoBehaviour:
   - {fileID: 288752003}
   - {fileID: 1762740186}
   - {fileID: 1535265160}
+  menuPanels: []
   trappedDwarfs: 
   savedCitizens: 0
   defeatedEnemys: 0

@@ -382,7 +382,7 @@ Transform:
   - {fileID: 2033264680}
   - {fileID: 857714312}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &115855917
 GameObject:
@@ -430,7 +430,7 @@ Transform:
   - {fileID: 1272710687}
   - {fileID: 385695624}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &136155747
 PrefabInstance:
@@ -1131,7 +1131,7 @@ Transform:
   m_Children:
   - {fileID: 932155026}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &561118159 stripped
 Transform:
@@ -5426,7 +5426,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 15
   m_TargetDisplay: 0
 --- !u!224 &1588297579
 RectTransform:
@@ -5441,7 +5441,7 @@ RectTransform:
   m_Children:
   - {fileID: 1843428258}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -5644,7 +5644,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1685170985
 PrefabInstance:
@@ -5869,7 +5869,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1801916507
 MonoBehaviour:
@@ -6340,6 +6340,7 @@ MonoBehaviour:
   - {fileID: 288752003}
   - {fileID: 1762740186}
   - {fileID: 1535265160}
+  menuPanels: []
   trappedDwarfs: 
   savedCitizens: 0
   defeatedEnemys: 0
@@ -6356,7 +6357,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2033264679
 GameObject:
