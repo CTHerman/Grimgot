@@ -5225,7 +5225,7 @@ MonoBehaviour:
   inputEnabled: 1
   activeDwarfId: 0
   dwarfCount: 3
-  switchCoolDown: 300
+  switchCoolDown: 1
   previousSwitch: 0
   statusPanels:
   - {fileID: 288752003}
