@@ -4185,7 +4185,7 @@ MonoBehaviour:
   - {fileID: 1762740186}
   - {fileID: 1535265160}
   menuPanels: []
-  trappedDwarfs: 
+  trappedDwarfs: 000101
   savedCitizens: 0
   defeatedEnemys: 0
   cc: {fileID: 0}
