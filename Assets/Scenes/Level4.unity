@@ -573,6 +573,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 144869161367632589, guid: 4b152164fcd7af34e9ac514f0b08e1e3, type: 3}
+      propertyPath: statusPanel
+      value: 
+      objectReference: {fileID: 1841460870}
     - target: {fileID: 5081626834305640782, guid: 4b152164fcd7af34e9ac514f0b08e1e3, type: 3}
       propertyPath: m_Name
       value: GoblinPatrol_2 (2)
@@ -3005,6 +3009,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 144869161367632589, guid: 4b152164fcd7af34e9ac514f0b08e1e3, type: 3}
+      propertyPath: statusPanel
+      value: 
+      objectReference: {fileID: 1841460870}
     - target: {fileID: 5081626834305640782, guid: 4b152164fcd7af34e9ac514f0b08e1e3, type: 3}
       propertyPath: m_Name
       value: GoblinPatrol_2 (1)
@@ -3532,6 +3540,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 144869161367632589, guid: 4b152164fcd7af34e9ac514f0b08e1e3, type: 3}
+      propertyPath: statusPanel
+      value: 
+      objectReference: {fileID: 1841460870}
     - target: {fileID: 5081626834305640782, guid: 4b152164fcd7af34e9ac514f0b08e1e3, type: 3}
       propertyPath: m_Name
       value: GoblinPatrol_2
