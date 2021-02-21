@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
     //stuff to be done before the level starts
     private void Awake()
     {
+        toggleFreezeGame(false);
         activeDwarfId = 0;
         setActiveStatusPanel(activeDwarfId);
         for(int i = 0; i < dwarfCount; i++)
